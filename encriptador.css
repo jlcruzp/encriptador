@@ -1,0 +1,560 @@
+html{
+    min-height: 100%;
+    position: absolute;
+    width: 944px;
+    font-size: 12px;
+    background: #E9ECF8;
+       
+}
+
+body{
+    margin:0rem;
+
+}
+header{
+    width: 100%;
+    height: 10rem;
+    background: #E9ECF8;
+    
+    }
+
+    main{
+        width: 100%;
+        display: inline-flex;
+        background: #E9ECF8;
+        
+        
+    }
+
+    .logo{
+        
+        display:block;
+        margin-top:2rem;
+        height: 4rem;
+        
+    }
+
+    .seccionizquierda{
+        width: 50%;
+        height: 55rem;
+        display: inline-block;
+    }
+        
+.input-padron{
+    width: 70%;
+    display: inline-block;
+    resize: none;
+    margin-left: 13rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: #0A3871;
+    background: none;
+    border-color: #e5e5e5;
+    border: 0mm;
+
+}
+.solominusculas{
+    width: 100%;
+    display: inline-block;
+    margin-left: 13rem;
+    font-size:1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color:black;
+    text-align:left;
+    background: none;
+    border-color: #e5e5e5;
+    border: 0mm;
+
+}
+
+.botones{
+    width: 50rem;
+    height: 10rem;
+    padding: 1rem;
+}
+
+
+
+
+.cta {
+    width: 35%;
+    margin-left: 8rem;
+    display:inline-block;
+    margin-top: 4rem;
+    padding: 1rem 1rem;
+    transition: all 1s ease;
+    border: none;
+    background: none;
+   }
+      
+   .cta span {
+    display:inline-block;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #0A3871;
+   }
+   
+   .cta svg {
+    position: relative;
+    margin-bottom: .3rem;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #0A3871;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 1s ease;
+   }
+   
+   .cta:hover {
+    width: 35%;
+    text-align: left;
+    background: #b1dae7;
+    cursor:pointer;
+    border-radius: 2rem;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+    transform: scale(1.5);
+    
+   }
+   
+   .cta:active {
+    transform: scale(0.85);
+   }
+
+   .cta1 {
+    width: 48%;
+    text-align: left;
+    display:inline-block;
+    padding: 1rem 1rem;
+    transition: all 1s ease;
+    border: none;
+    background: none;
+   }
+      
+   .cta1 span {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #0A3871;;
+   }
+   
+   .cta1 svg {
+    display: inline-block;
+    margin-bottom: .3rem;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #0A3871;;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta1:hover{
+    width: 45%;
+    text-align: left;
+    background: #b1dae7;
+    cursor:pointer;
+    border-radius: 2rem;
+   }
+   
+   .cta1:hover svg {
+    transform: translateX(0);
+    transform: scale(1.5);
+    
+   }
+   
+   .cta1:active {
+    transform: scale(0.85);
+   }
+   .frame5{
+    position:absolute;
+    width: 20rem;
+    height: 7rem;
+    left:18rem;
+    top:51rem;
+    display:none;
+   }
+
+  #frame7{
+    display:none;
+  }
+
+.seccionderecha{
+
+    width: 100%;
+    display:inline-block;
+   
+
+}
+.rectangulomensaje{
+    width: 30rem;
+   position: absolute;
+   top:1rem;
+   left:53rem;
+   margin-left: 0rem;
+}
+
+#textToEncode{
+    position: absolute; 
+    top:5rem;
+    left:56.5rem;
+    resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    color:black;
+    text-align: center;
+    background:none;
+    border-color: #e5e5e5;
+    border: 0mm;
+}
+
+.muneco{
+    
+    position:absolute;
+    top:15rem;
+    left:57rem;
+    height: 20rem;
+    
+
+}
+
+#nomensaje{
+
+    position: absolute;
+    top: 35rem;
+    left: 53.5rem;
+    padding:5px;  
+    
+}
+
+   .cta2 {
+    position: absolute;
+    top:49rem;
+    left:60rem;
+    padding: 12px 18px;
+    transition: all 1s ease;
+    border: none;
+    background: none;
+   }
+   
+     
+   .cta2 span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #0A3871;
+   }
+   
+   .cta2 svg {
+    position: relative;
+    margin-bottom: .5rem;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #0A3871;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 1s ease;
+   }
+   
+   .cta2:hover{
+    width: 15%;
+    text-align: left;
+    background: #b1dae7;
+    cursor:pointer;
+    border-radius: 2rem;
+   }
+   
+   .cta2:hover svg {
+    transform: translateX(0);
+    transform: scale(1.5);
+    
+   }
+   
+   .cta2:active {
+    transform: scale(0.95);
+   }
+
+
+body{
+    background: #b1dae7;
+    
+}
+
+footer{
+position: absolute;
+bottom:0rem;
+width: 100%;
+height: 3rem;
+color: #0A3871;
+background: #E9ECF8;
+text-align: center;
+text-decoration: dashed;
+font-size: 1.75rem;
+
+}
+
+
+@media only screen and (max-width:415px) {
+
+   main, .seccionizquierda, html, header, head{
+        width: 100%;
+    }
+      
+    .input-padron{
+        width: 90%;
+        font-weight: lighter;
+        text-align: center;
+        margin-left: 2rem;
+        padding-left: 0rem;
+        font-size: 2rem;
+    }
+    .solominusculas{
+        width: 100%;
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+    .botones{
+
+        width: 100%;
+        padding:0rem;
+        margin:0rem;
+        
+    }
+    .cta{
+        width: 90%;
+        font-size:1.75rem;
+        text-align:center;
+        margin:3rem 1rem 2rem 1rem;
+        padding: 0rem;
+    }
+    .cta:hover{
+
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cta1{
+        width: 100%;
+        font-size: 1.75rem;
+        display: inline-block;
+        text-align:center;
+        margin: 0rem 0;
+        padding: 0rem;
+    }
+    .cta1:hover{
+        width: 99%;
+        text-align: center;
+       }
+
+       #textToEncode{
+        width: 84%;
+        height: 13rem;
+        position: absolute;
+        left:2rem;
+        top:47rem;
+        resize: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        font-weight: lighter;
+        color:black;
+        text-align: center;
+        background: white;
+        border-color: #e5e5e5;
+        border: 0mm;
+        border-radius: 2rem;
+        padding: 0;
+        margin: 0;
+        }
+
+    body{
+    background: #E9ECF8;
+    
+    } 
+        
+    .muneco, #nomensaje{
+        display:none;
+    }
+    .rectangulomensaje{
+        display:none;
+    }
+    
+    .frame5{
+        display:block;
+        position: absolute;
+        left:5rem;
+        top:50rem;
+    }
+
+    #frame7{
+        display:none;
+      }
+   
+    .seccionderecha{
+        width: 0%;
+    }
+    .cta2{
+        display:inline-block;
+        width: 100%;
+        top: 62rem;
+        left:0rem;
+        text-align: center; 
+        margin:0rem;
+        padding: 0rem;
+          
+    }
+    .cta2:hover{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:415px) and (max-width:913px) {
+
+    main, .seccionizquierda, html, header, head{
+        width: 100%;
+    }
+
+   
+    .input-padron{
+        width: 90%;
+        font-weight: lighter;
+        text-align: justify;
+        margin-left: 4rem;
+        padding-left: 0rem;
+        font-size: 3rem;
+    }
+    .solominusculas{
+        width: 100%;
+        margin-left: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .botones{
+        display: inline-block;
+        width: 100%;
+        padding:0rem;
+        margin:4rem 0rem; 
+        
+    }
+    .cta{
+        width: 48%;
+        display:inline-block;
+        font-size:1.75rem;
+        text-align:center;
+        margin:0rem;
+        padding: 0rem;
+    }
+    .cta:hover{
+
+        width: 48%;
+        text-align: center;
+    }
+    
+    .cta1{
+        width: 48%;
+        font-size: 1.75rem;
+        display: inline-block;
+        text-align:center;
+        margin: 0rem 0;
+        padding: 0rem;
+    }
+    .cta1:hover{
+        width: 48%;
+        text-align: center;
+       }
+
+       #textToEncode{
+        width: 96%;
+        height: 28rem;
+        position: absolute;
+        left:2rem;
+        top:52rem;
+        resize: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        font-weight: lighter;
+        color:black;
+        text-align: center;
+        background: white;
+        border-color: #e5e5e5;
+        border: 0mm;
+        border-radius: 2rem;
+        padding: 0;
+        margin: 0;
+        }
+
+    body{
+    background: #E9ECF8;
+    
+    } 
+        
+    .muneco, #nomensaje, .frame5{
+        display:none;
+    }
+    .rectangulomensaje{
+        display:none;
+    }
+    
+  
+    #frame7{
+        display:block;
+        width: 60%;
+        position: absolute;
+        top:60rem;
+        left:13rem;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #frame7 h2{
+        font-weight: bold;
+        
+      }
+
+      #frame7 h4{
+        font-size: 1.75rem;
+      }
+   
+    .seccionderecha{
+        width: 0%;
+    }
+    .cta2{
+        display:inline-block;
+        width: 100%;
+        top: 84rem;
+        left:0rem;
+        text-align: center; 
+        margin:0rem;
+        padding: 0rem;
+          
+    }
+    .cta2:hover{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+}

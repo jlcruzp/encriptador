@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width" />
+                <title>Encriptador</title>
+                <link rel="stylesheet" href="reset.css">
+                <link rel="stylesheet" href="encriptador.css">
+
+            </head>
+
+<body>
+
+        <header>
+          
+            <img src= "Imagenes/Logo.png" class="logo">
+
+         </header>
+
+            <main>
+                
+              <section class="seccionizquierda">
+                
+                  <textarea class="input-padron" cols="25" rows="6" spellcheck="false" id="mensaje" required>Ingrese el texto aquí</textarea>
+                       
+                  <h3 class="solominusculas" spellcheck="false">⚠ Sólo letras minúsculas y sin acentos.</h3>   
+                
+                
+                  <div class="botones">
+                <button class="cta">
+                  <span>Encriptar</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+                            
+                <button class="cta1">
+                  <span>Desencriptar</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+              </div>    
+                
+               </section>
+
+              <section class="seccionderecha">
+
+                <img src= "Imagenes/Rectangle 1.png" class="rectangulomensaje"> 
+
+                                
+                <img id= "munecote" src= "Imagenes/Muñeco.png" class="muneco">
+
+                
+                <img id= "nomensaje" src= "Imagenes/Frame 4.png">
+
+                <textarea cols="18" rows="22" spellcheck="false"id="textToEncode" disabled ></textarea>           
+                              
+                <img id="frame"src="Imagenes/Frame 4.png" class="frame5">                 
+                
+                <div id="frame7">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <br>
+                <h4>Ingresa el texto que desees encriptar o desencriptar</h4>
+              </div>
+
+              </section>
+
+              <button class="cta2">
+                <span>Copiar</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+                
+              
+                
+            </main>
+
+    <script>
+        
+        
+        var botoncodificar= document.querySelector(".cta");
+        var botondecodificar= document.querySelector(".cta1");
+        var botoncopiar= document.querySelector(".cta2");
+        var codigo= document.querySelector(".input-padron");
+      
+        
+
+        function codificar(){
+                var str = codigo.value;
+                var vObj = {
+                   a:"ai",
+                   e:"enter",
+                   i:"imes",
+                   o:"ober",
+                   u:"ufat"
+                };
+                str = str.replace(/a|e|i|o|u/g, function(matched){
+                  return vObj[matched];
+                });
+
+                    
+               document.getElementById("textToEncode").innerHTML= str;
+                        
+               document.getElementById("munecote").style.display = "none";
+                document.getElementById("nomensaje").style.display = "none";
+                document.getElementById("frame").style.display = "none";
+                document.getElementById("frame7").style.display = "none";
+                
+            
+            
+        }
+
+         
+
+        function decodificar(){
+                var str = codigo.value;
+                var vObj = {
+                   ai:"a",
+                   enter:"e",
+                   imes:"i",
+                   ober:"o",
+                   ufat:"u"
+                };
+                str = str.replace(/ai|enter|imes|ober|ufat/g, function(matched){
+                  return vObj[matched];
+                });
+
+                
+                document.getElementById("textToEncode").innerHTML= str;
+                
+                document.getElementById("munecote").style.display = "none";
+                document.getElementById("nomensaje").style.display = "none";
+                document.getElementById("frame").style.display = "none";
+                document.getElementById("frame7").style.display = "none";
+            
+        }
+
+        function limpiar(evento){
+            codigo.value="";
+            return codigo;
+        }
+
+        function copiar(evento){
+          var codigoACopiar = document.getElementById('textToEncode');
+          
+          var seleccion = document.createRange();
+          seleccion.selectNodeContents(codigoACopiar);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(seleccion);
+          var res = document.execCommand('copy');
+          window.getSelection().removeRange(seleccion);
+        }
+
+        botoncodificar.onclick= codificar;
+        botondecodificar.onclick= decodificar;
+        botoncopiar.onclick= copiar;
+
+        codigo.onclick= limpiar;
+
+    </script>
+
+
+
+</Body>
+
+<footer>
+  <p class="piedepagina"> Elaboró: Juan Luis Cruz Peña     email:jcruzpea@hotmail.com</p>
+</footer>
+
+</html>
